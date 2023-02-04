@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            height: 470px;
+            width: 400px;
+            background-color: #99d3de89;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            border: solid #171616 3px;
+            margin-top: 10px;
+            box-shadow: 0px 2px 150px 0px gray;
+            margin-top: 50px;
+        }
+
+        .cal-brand-name {
+            color: black;
+            margin-left: 20px;
+            padding-top: 20px;
+            display: block;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .calulator-screen {
+            font-size: 40px;
+            width: 350px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #73a0464f;
+            border: double #655555 5px;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .calculator-button {
+            background-color: aliceblue;
+            height: 40px;
+            width: 40px;
+            margin: 10px;
+            font-size: 30px;
+            border-radius: 8px;
+            border: #060707 1px solid;
+            box-shadow: 0px 3px 3px 0px black;
+            font-weight: bold;
+            cursor: pointer;
+
+          
+    
+            justify-content: space-around;
+        }
+
+        .calculator-button:hover {
+            box-shadow: 0 4px 5px #1a1515;
+        }
+
+        .font-cal {
+            font-size: 10px;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            color: red;
+        }
+
+        .font-cal2 {
+            font-size: 15px;
+        }
+
+        .font-cal3 {
+            font-size: 20px;
+        }
+
+        .bg-color {
+            background-color: aqua;
+            border: red;
+        }
+
+        .bg-color-red {
+            color: red;
+        }
+
+        .btn-plus-minus {
+            visibility: hidden;
+        }
+
+        .btn-height {
+            height: 100px;
+        }
+
+        .btn-container-last-row {
+            position: absolute;
+            
+        }
+
+        .btn-container-last-row-plus{
+            position: relative;
+            bottom:60px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="cal-brand-name">RTC</p>
+        <input type="text" class="calulator-screen">
+        <div class="button-container">
+            <button class="calculator-button font-cal bg-color">CHECK</button>
+            <button class="calculator-button font-cal font-cal2 bg-color">DEL</button>
+            <button class="calculator-button font-cal font-cal2 bg-color">GT</button>
+            <button class="calculator-button font-cal bg-color">AUTO REPLY</button>
+            <button class="calculator-button font-cal font-cal2 bg-color">AC</button>
+        </div>
+        <div class="button-container">
+            <button class="calculator-button">7</button>
+            <button class="calculator-button">8</button>
+            <button class="calculator-button">9</button>
+            <button class="calculator-button">√</button>
+            <button class="calculator-button font-cal2">%</button>
+        </div>
+        <div class="button-container">
+            <button class="calculator-button">4</button>
+            <button class="calculator-button">5</button>
+            <button class="calculator-button">6</button>
+            <button class="calculator-button">÷</button>
+            <button class="calculator-button">*</button>
+        </div>
+        <div class="button-container">
+            <button class="calculator-button">1</button>
+            <button class="calculator-button">2</button>
+            <button class="calculator-button">3</button>
+            <button class="calculator-button">-</button>
+            <button class="calculator-button btn-height ">+</button>
+        </div>
+        <div class="button-container">
+            <button class="calculator-button btn-container-last-row btn-container-last-row-plus">.</button>
+            <button class="calculator-button btn-container-last-row btn-container-last-row-plus">0</button>
+            <button class="calculator-button font-cal3 btn-container-last-row btn-container-last-row-plus">00</button>
+            <button class="calculator-button btn-container-last-row btn-container-last-row-plus">=</button>
+            <button class="calculator-button btn-plus-minus">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
