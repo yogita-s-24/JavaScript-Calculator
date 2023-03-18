@@ -4,6 +4,8 @@
 <head>
   <title>Calculator Design</title>
   <style>
+    
+
     .container {
       height: 460px;
       width: 400px;
@@ -132,25 +134,25 @@
   </style>
 </head>
 
-<script type="text/javascript">
-  function handleClick(val) {
-    const inputBox = document.getElementById("calculator-screen");
-    inputBox.value = inputBox.value + val;
-  }
-
-  function clearScreen() {
-    const inputBox = document.getElementById("calculator-screen");
-    inputBox.value = "";
-  }
-
-  function calculate() {
-    const inputBox = document.getElementById("calculator-screen");
-    const ans = eval(inputBox.value);
-    inputBox.value = ans;
-  }
-</script>
 
 <body>
+  <script type="text/javascript">
+    function handleClick(val) {
+      const inputBox = document.getElementById("calculator-screen");
+      inputBox.value = inputBox.value + val;
+    }
+
+    function clearScreen() {
+      const inputBox = document.getElementById("calculator-screen");
+      inputBox.value = "";
+    }
+
+    function calculate() {
+      const inputBox = document.getElementById("calculator-screen");
+      const ans = eval(inputBox.value);
+      inputBox.value = ans;
+    }
+  </script>
   <div class="container">
     <p class="cal-brand-name">RTC</p>
     <input type="text" class="calulator-screen" id="calculator-screen" />
